@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privatlivspolitik — Kurven</title>
+<meta name="description" content="Kurvens privatlivspolitik: hvad appen indsamler, hvorfor, og hvad der sker når du sletter din konto.">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="/"><b>Kurven</b> <span>den delte indkøbsliste</span></a>
+  <nav><a href="/">Forside</a><a href="/privacy/">Privatlivspolitik</a><a href="/tos/">Vilkår</a><a href="/support/">Support</a></nav>
+</header>
+
+<h1>Privatlivspolitik</h1>
+<p class="date">Senest opdateret 7. september 2026</p>
+
+<p class="lede">Kurven er en delt indkøbsliste. Alt, hvad appen gemmer om dig, er der af én
+grund: at få listen til at virke på tværs af de telefoner, der deler den. Der er ingen
+annoncer, ingen sporing og intet salg af data. Listen ligger i EU; login-tjenesten er hostet
+i USA — det er beskrevet nedenfor.</p>
+
+<h2>Hvem er ansvarlig</h2>
+<p>Kurven drives af en privatperson i Danmark. Kontakt:
+<a href="mailto:kontakt@kurven.thore.me">kontakt@kurven.thore.me</a>.</p>
+
+<h2>Hvad vi indsamler, og hvorfor</h2>
+<p>Alt herunder er knyttet til din konto, bruges udelukkende til appens funktion, og
+<b>intet af det bruges til sporing</b>.</p>
+
+<table>
+<tr><th>Data</th><th>Hvorfor</th></tr>
+<tr><td><b>E-mailadresse</b></td><td>Login. Bruger du Apples “Skjul min e-mail”, gemmer vi kun Apples videresendelsesadresse — aldrig din rigtige.</td></tr>
+<tr><td><b>Navn</b></td><td>Vises for de andre i din Circle som “Tilføjet af …”.</td></tr>
+<tr><td><b>Bruger-id</b></td><td>Nøglen til din konto, dit medlemskab af en Circle, og afsenderen på hver ændring.</td></tr>
+<tr><td><b>Enheds-id og push-token</b></td><td>Så en besked når frem til den rigtige telefon eller det rigtige ur.</td></tr>
+<tr><td><b>Omtrentlig placering</b></td><td>Én måling på ca. 100 meter, når en indkøbstur starter og slutter, så turen kan sige hvilken butik det var — og så listen kan vælge den butik, du står i. Sammenligningen med dine butikkers placering sker på telefonen; der hentes aldrig placering i baggrunden. <b>Frivillig</b> — appen spørger første gang, du åbner den, og du kan springe over. Siger du nej, udelades felterne, og resten af appen virker uændret. Du kan ændre det når som helst under Indstillinger → Placering.</td></tr>
+<tr><td><b>Dit indhold</b></td><td>Varer, mængder, noter, butikker, opskrifter, kategorier og “ring hjem”-spørgsmål — det du selv skriver, delt med din Circle.</td></tr>
+</table>
+
+<p>Vi indsamler <b>ikke</b> præcis placering, kontakter, fotos, helbredsdata, betalingsdata
+eller reklame-id'er. Der er ingen analyse- eller crash-værktøjer i appen.</p>
+
+<div class="note">
+  <h3 style="margin-top:0">Når du sletter din konto</h3>
+  <p>Du kan slette din konto i appen under <b>Indstillinger → Konto → Slet konto</b>.</p>
+  <p>Det sletter din konto hos vores login-udbyder, din e-mailadresse, alle dine enheder og
+  push-tokens, koordinaterne på de ture du har startet eller afsluttet, dine pauser, og dit
+  medlemskab af din Circle.</p>
+  <p><b>To ting bliver bevidst tilbage:</b> de varer og ændringer, du har skrevet på den delte
+  liste, og <b>dit viste navn på dem</b>. Listen er fælles — hvis dine varer forsvandt, ville
+  de andre pludselig mangle ting, de stadig skulle købe. Derfor bliver der fortsat stående
+  “Tilføjet 14:32 af Dorte”, også efter du er væk.</p>
+  <p>Er du det sidste aktive medlem af en Circle, slettes hele den Circle med alt indhold —
+  der er ingen at bevare den for.</p>
+  <p>Vil du også have navnet fjernet, så skriv til
+  <a href="mailto:kontakt@kurven.thore.me">kontakt@kurven.thore.me</a>, så gør vi det manuelt.</p>
+</div>
+
+<h2>Hvem behandler data for os</h2>
+<table>
+<tr><th>Leverandør</th><th>Rolle</th><th>Hvor</th></tr>
+<tr><td><b>Clerk</b></td><td>Login og kontostyring: e-mail, navn, bruger-id.</td><td><b>USA</b></td></tr>
+<tr><td><b>Microsoft Azure</b></td><td>Server og database — selve listen, dine varer, butikker og placeringer.</td><td><b>EU</b> (North Europe)</td></tr>
+<tr><td><b>Apple</b></td><td>Push-beskeder (APNs) og “Log ind med Apple”.</td><td>USA</td></tr>
+<tr><td><b>Google</b></td><td>Kun hvis du vælger at logge ind med Google.</td><td>USA</td></tr>
+</table>
+
+<h2>Overførsel til USA</h2>
+<div class="note">
+  <p><b>Login-tjenesten er hostet i USA.</b> Kurven bruger Clerk til at håndtere konti, og
+  Clerk opbevarer sine data på servere i USA. Det betyder, at <b>din e-mailadresse, dit navn
+  og dit bruger-id overføres til og opbevares uden for EU/EØS</b>.</p>
+  <p><b>Selve listen gør det ikke.</b> Dine varer, noter, opskrifter, butikker, omtrentlige
+  placeringer og push-tokens ligger i en database i <b>Nordeuropa</b> og forlader ikke EU.</p>
+  <p>Overførslen sker på grundlag af de garantier, der er aftalt i databehandleraftalen med
+  Clerk (EU-Kommissionens standardkontraktbestemmelser). Bruger du “Log ind med Apple” eller
+  Google, behandler de også dine login-oplysninger i USA efter deres egne vilkår.</p>
+  <p>Vil du helt undgå det, kan du ikke bruge Kurven — kontoen er en forudsætning for en delt
+  liste.</p>
+</div>
+
+<h2>Hvor længe gemmer vi det</h2>
+<p>Så længe du har en konto. Sletter du kontoen, sker det beskrevet ovenfor med det samme.
+Databasesikkerhedskopier opbevares i 14 dage og overskrives derefter.</p>
+
+<h2>Dine rettigheder</h2>
+<p>Efter GDPR har du ret til indsigt, berigtigelse, sletning, begrænsning og dataportabilitet.
+Sletning kan du selv udføre i appen; alt andet — og sletning af bevaret navn — sker ved at
+skrive til <a href="mailto:kontakt@kurven.thore.me">kontakt@kurven.thore.me</a>. Du kan klage
+til <a href="https://www.datatilsynet.dk">Datatilsynet</a>.</p>
+
+<h2>Børn</h2>
+<p>Kurven er ikke rettet mod børn under 13 år, og vi indsamler ikke bevidst data om dem.</p>
+
+<h2>Ændringer</h2>
+<p>Ændrer vi denne politik, opdaterer vi datoen øverst. Væsentlige ændringer varsles i appen.</p>
+
+<div class="lang">
+<h2 id="en">In English</h2>
+
+<h3>Who is responsible</h3>
+<p>Kurven is run by a private individual in Denmark. Contact:
+<a href="mailto:kontakt@kurven.thore.me">kontakt@kurven.thore.me</a>.</p>
+
+<h3>What we collect, and why</h3>
+<p>Everything below is linked to your account, used solely for app functionality, and
+<b>none of it is used for tracking</b>.</p>
+<table>
+<tr><th>Data</th><th>Why</th></tr>
+<tr><td><b>Email address</b></td><td>Sign-in. If you use Apple's “Hide My Email”, we only ever store Apple's relay address, never your real one.</td></tr>
+<tr><td><b>Name</b></td><td>Shown to others in your Circle as “Added by …”.</td></tr>
+<tr><td><b>User ID</b></td><td>The key to your account, your Circle membership, and the author of each change.</td></tr>
+<tr><td><b>Device ID and push token</b></td><td>So a notification reaches the right phone or watch.</td></tr>
+<tr><td><b>Coarse location</b></td><td>One ~100&nbsp;m reading when a shopping trip starts and ends, so the trip can say which shop it was — and so the list can pick the shop you are standing in. The comparison with your shops' locations happens on the phone; location is never read in the background. <b>Optional</b> — the app asks the first time you open it, and you can skip. Decline and the fields are simply omitted; everything else works unchanged. Change it any time under Settings → Location.</td></tr>
+<tr><td><b>Your content</b></td><td>Items, quantities, notes, shops, recipes, categories and call-home questions — what you type, shared with your Circle.</td></tr>
+</table>
+<p>We do <b>not</b> collect precise location, contacts, photos, health data, payment data or
+advertising identifiers. There are no analytics or crash-reporting tools in the app.</p>
+
+<h3>When you delete your account</h3>
+<p>You can delete your account in the app under <b>Settings → Account → Delete account</b>. That
+removes your account at our sign-in provider, your email address, every device and push token,
+the coordinates of trips you started or ended, your pauses, and your Circle membership.</p>
+<p><b>Two things deliberately remain:</b> the items and changes you wrote on the shared list,
+and <b>your display name on them</b>. The list is shared — if your items vanished, everyone else
+would suddenly be missing things they still needed to buy. So “Added 14:32 by Dorte” keeps
+reading that way after you are gone.</p>
+<p>If you are the last active member of a Circle, that whole Circle and its contents are deleted
+outright — there is nobody left to preserve it for.</p>
+<p>If you want the retained name removed too, email
+<a href="mailto:kontakt@kurven.thore.me">kontakt@kurven.thore.me</a> and we will do it by hand.</p>
+
+<h3>Processors, and transfer to the USA</h3>
+<table>
+<tr><th>Provider</th><th>Role</th><th>Where</th></tr>
+<tr><td><b>Clerk</b></td><td>Sign-in and account management: email, name, user ID.</td><td><b>USA</b></td></tr>
+<tr><td><b>Microsoft Azure</b></td><td>Server and database — the list itself, your items, shops and locations.</td><td><b>EU</b> (North Europe)</td></tr>
+<tr><td><b>Apple</b></td><td>Push notifications (APNs) and Sign in with Apple.</td><td>USA</td></tr>
+<tr><td><b>Google</b></td><td>Only if you choose to sign in with Google.</td><td>USA</td></tr>
+</table>
+<p><b>The sign-in service is hosted in the United States.</b> Kurven uses Clerk for accounts, and
+Clerk stores its data on servers in the USA. That means <b>your email address, name and user ID
+are transferred to and stored outside the EU/EEA</b>.</p>
+<p><b>The list itself is not.</b> Your items, notes, recipes, shops, coarse locations and push
+tokens live in a database in <b>North Europe</b> and do not leave the EU.</p>
+<p>The transfer takes place under the safeguards agreed in the data processing agreement with
+Clerk (the European Commission's standard contractual clauses). If you use Sign in with Apple or
+Google, they also process your sign-in details in the USA under their own terms. If you want to
+avoid this entirely, you cannot use Kurven — an account is what makes a shared list possible.</p>
+
+<h3>Retention, rights, children, changes</h3>
+<p>Data is kept while you have an account. Database backups are retained for 14 days. Under GDPR
+you have rights of access, rectification, erasure, restriction and portability — deletion is
+self-service in the app, everything else by email. You may complain to the Danish Data Protection
+Agency. Kurven is not directed at children under 13. Changes to this policy update the date at
+the top, and material changes are announced in the app.</p>
+</div>
+
+<footer><a href="/">Kurven</a> · <a href="/tos/">Vilkår</a> · <a href="/support/">Support</a></footer>
+</div>
+</body>
+</html>
