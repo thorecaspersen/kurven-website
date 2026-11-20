@@ -36,9 +36,14 @@ kurven  A  185.199.111.153
 
 ## Mail
 
-`kontakt@kurven.thore.me` forwards to a private mailbox via **ForwardEmail.net** (free, no
-account — the routing lives in the TXT record itself, so the real destination address is only
-visible in the one.com DNS panel, never in this repo):
+The public contact address is **`kurven@thore.me`** (from 2026-11-20). It is an alias in one.com's
+E-mail product for `thore.me`, forwarding to the owner's private mailbox, so the real destination
+is only visible in one.com, never in this repo. (`thore.me` also has `hello@` and `transaction@`
+aliases and a catch-all; the explicit `kurven@` alias works even if the catch-all is switched off.)
+
+one.com cannot host mail for the subdomain `kurven.thore.me`, which is why the address lives on
+the parent domain. Mail to the **old** address `kontakt@kurven.thore.me` still works for now, by a
+second route that does not use one.com's mail at all — ForwardEmail.net, through these records:
 
 ```
 kurven  MX   10  mx1.forwardemail.net
@@ -46,9 +51,8 @@ kurven  MX   10  mx2.forwardemail.net
 kurven  TXT      forward-email=kontakt:<destination-address>
 ```
 
-`<destination-address>` is the real inbox — look it up in one.com, do not write it down here.
-The `kontakt:` prefix maps only that one address. A bare `forward-email=<address>` would be a
-catch-all, which works but invites every spam probe at the domain.
+They can be deleted once the old address has stopped appearing anywhere (App Review reads the
+live site; old links in cached or printed copies are the only reason to keep them).
 
 > 🔴 **Never add an SPF record to `kurven.thore.me`.** Forwarding needs none — SPF governs
 > sending. But this is the domain **Clerk sends sign-in codes from**, authenticated by the
