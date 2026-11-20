@@ -39,11 +39,12 @@ kurven  A  185.199.111.153
 The public contact address is **`kurven@thore.me`** (from 2026-11-20). It is an alias in one.com's
 E-mail product for `thore.me`, forwarding to the owner's private mailbox, so the real destination
 is only visible in one.com, never in this repo. (`thore.me` also has `hello@` and `transaction@`
-aliases and a catch-all; the explicit `kurven@` alias works even if the catch-all is switched off.)
+aliases. There is **no catch-all**: one was set up and removed on 2026-11-20, so a mistyped address bounces.)
 
 one.com cannot host mail for the subdomain `kurven.thore.me`, which is why the address lives on
-the parent domain. Mail to the **old** address `kontakt@kurven.thore.me` still works for now, by a
-second route that does not use one.com's mail at all — ForwardEmail.net, through these records:
+the parent domain. The **old** address `kontakt@kurven.thore.me` was routed by a second mechanism,
+ForwardEmail.net, through these records. It still **works** (tested 2026-11-20) but delivers to a
+Gmail plus-address, not to the hotmail:
 
 ```
 kurven  MX   10  mx1.forwardemail.net
@@ -51,8 +52,10 @@ kurven  MX   10  mx2.forwardemail.net
 kurven  TXT      forward-email=kontakt:<destination-address>
 ```
 
-They can be deleted once the old address has stopped appearing anywhere (App Review reads the
-live site; old links in cached or printed copies are the only reason to keep them).
+These three records **stay on purpose** (owner's decision 2026-11-20): a second route, so nothing
+sent to either address is lost. Look in Gmail now and then. To make the old address land in the
+hotmail too, change the TXT value to `forward-email=kontakt:<hotmail-address>`. Do not touch the
+`clk._domainkey` / `clk2._domainkey` records or the `A` record on `kurven`.
 
 > 🔴 **Never add an SPF record to `kurven.thore.me`.** Forwarding needs none — SPF governs
 > sending. But this is the domain **Clerk sends sign-in codes from**, authenticated by the
